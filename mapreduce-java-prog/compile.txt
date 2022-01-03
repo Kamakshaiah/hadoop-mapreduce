@@ -1,0 +1,4 @@
+export HADOOP_CLASSPATH=$( hadoop classpath )
+sudo javac -classpath $HADOOP_CLASSPATH -d wordcount/ wordcount.java
+sudo jar cvf wc.jar -C wordcount/ .
+
