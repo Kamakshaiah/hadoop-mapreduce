@@ -1,0 +1,149 @@
+  578  sudo rm *
+  579  ls
+  580  cd ..
+  581  ls
+  582  sudo gedit WordCount.java 
+  583  sudo javac -classpath ${HADOOP_CLASSPATH} -d '/home/hduser/mapreduce/wordcount/' '/home/hduser/mapreduce/WordCount.java' 
+  584  sudo jar -cvf wc.jar -c wordcount/ .
+  585  ls
+  586  sudo rm wc.jar 
+  587  sudo jar -cvf wc.jar wordcount/ .
+  588  ls
+  589  hadoop jar '/home/hduser/mapreduce/wc.jar' WordCount /dir1/input/text.txt /dir1/output2
+  590  cd wordcount/
+  591  ls
+  592  cd ..
+  593  hadoop jar /home/hduser/mapreduce/wc.jar org.myorg.WordCount /dir1/input/text.txt /dir1/output2
+  594  hadoop jar /home/hduser/mapreduce/wc.jar WordCount.class WordCount$Map.class WordCount$Reduce.class /dir1/input/text.txt /dir1/output2
+  595  ls
+  596  sudo chmod +x wc.jar 
+  597  ls
+  598  hadoop jar /home/hduser/mapreduce/wc.jar WordCount /dir1/input/text.txt /dir1/output2
+  599  cd 
+  600  sudo chmod 777 /home/hduser/mapreduce/wc.jar 
+  601  hadoop jar /home/hduser/mapreduce/wc.jar WordCount /dir1/input/text.txt /dir1/output2
+  602  cd /map
+  603  cd mapreduce/
+  604  ls
+  605  ls -l wc.jar 
+  606  hadoop jar '/home/hduser/mapreduce/wc.jar' WordCount /dir1/input/text.txt /dir1/output2
+  607  jar tvf wc.jar 
+  608  clear
+  609  cd 
+  610  export HADOOP_CLASSPATH=${JAVA_HOME}/lib/tools.jar
+  611  echo ${HADOOP_CLASSPATH} 
+  612  cd mapreduce/
+  613  ls
+  614  sudo rm wc.jar 
+  615  hadoop com.sun.tools.javac.Main WordCount.java 
+  616  sudo hadoop com.sun.tools.javac.Main WordCount.java 
+  617  sudo gedit WordCount.java 
+  618  ls -l WordCount.java 
+  619  sudo chmod +x WordCount.java 
+  620  ls -l WordCount.java 
+  621  sudo chmod 777 WordCount.java 
+  622  hadoop com.sun.tools.javac.Main WordCount.java 
+  623  su
+  624  hadoop com.sun.tools.javac.Main WordCount.java 
+  625  ls -l WordCount.java 
+  626  sudo javac WordCount.java 
+  627  sudo javac -classpath ${HADOOP_CLASSPATH} WordCount.java 
+  628  sudo javac -classpath ${HADOOP_CLASSPATH} -d WordCount.java 
+  629  sudo javac -classpath ${HADOOP_CLASSPATH} -d wordcount/ WordCount.java 
+  630  sudo javac -classpath ${HADOOP_CLASSPATH} -d /home/hduser/mapreduce/wordcount/ /home/hduser/mapreduce/WordCount.java 
+  631  ls
+  632  cd 
+  633  clear
+  634  ls
+  635  cd mapreduce/
+  636  ls
+  637  cd wordcount/
+  638  sudo javac -classpath ${HADOOP_CLASSPATH} '/home/hduser/mapreduce/wordcount/' '/home/hduser/mapreduce/WordCount.java' 
+  639  sudo javac -classpath ${HADOOP_CLASSPATH} -d '/home/hduser/mapreduce/wordcount/' '/home/hduser/mapreduce/WordCount.java' 
+  640  echo ${HADOOP_CLASSPATH} 
+  641  export HADOOP_CLASSPATH=$(hadoop classpath)
+  642  echo ${HADOOP_CLASSPATH} 
+  643  sudo javac -classpath ${HADOOP_CLASSPATH} -d '/home/hduser/mapreduce/wordcount/' '/home/hduser/mapreduce/WordCount.java' 
+  644  jar -cvf wc.jar -C /home/hduser/mapreduce/wordcount/
+  645  jar cvf wc.jar -C /home/hduser/mapreduce/wordcount/
+  646  jar -cvf wc.jar -C /home/hduser/mapreduce/wordcount/ . 
+  647  sudo jar -cvf wc.jar -C /home/hduser/mapreduce/wordcount/ . 
+  648  ls
+  649  hadoop jar '/home/hduser/mapreduce/wordcount/wc.jar' /dir1/input/text.txt /dir1/output2
+  650  hadoop jar '/home/hduser/mapreduce/wordcount/wc.jar' WordCount /dir1/input/text.txt /dir1/output2
+  651  hdfs dfs -ls /dir1/output2
+  652  hdfs dfs -cat /dir1/output2/part-r-00000
+  653  ls
+  654  cd ..
+  655  ls
+  656  sudo gedit WordCount.java 
+  657  ls
+  658  sudo gedit WordCountAvg.java
+  659  sudo mkdir wordcountavg
+  660  sudo javac -classpath ${HADOOP_CLASSPATH} -d /home/hduser/mapreduce/wordcountavg/ /home/hduser/mapreduce/WordCountAvg.java 
+  661  sudo mv WordCountAverage.java
+  662  sudo mv WordCountAvg.java WordCountAverage.java
+  663  ls
+  664  sudo javac -classpath ${HADOOP_CLASSPATH} -d /home/hduser/mapreduce/wordcountavg/ /home/hduser/mapreduce/WordCountAverage.java
+  665  ls 
+  666  cd wordcountavg/
+  667  ls
+  668  cd com/
+  669  ls
+  670  cd ransilberman/
+  671  ls
+  672  cd ..
+  673  ls
+  674  cd ..
+  675  ls
+  676  sudo gedit WordCountAverage.java 
+  677  ls
+  678  sudo rm -rf wordcountavg/
+  679  ls
+  680  sudo mkdir wordcountavg
+  681  ls
+  682  sudo javac -classpath ${HADOOP_CLASSPATH} -d /home/hduser/mapreduce/wordcountavg/ /home/hduser/mapreduce/WordCountAverage.java
+  683  ls
+  684  cd wordcount
+  685  cd ..
+  686  cd wordcountavg/
+  687  ls
+  688  cd ..
+  689  ls
+  690  sudo jar -cvf wordcountavg.jar -C wordcountavg/ .
+  691  ls
+  692  hadoop jar '/home/hduser/mapreduce/wordcountavg.jar' /dir1/input/text.txt /dir1/output3
+  693  hadoop jar '/home/hduser/mapreduce/wordcountavg.jar' WordCountAverage /dir1/input/text.txt /dir1/output3
+  694  hdfs dfs -ls /dir1/output3/
+  695  hdfs dfs -cat /dir1/output3/part-r-00000
+  696  hdfs dfs -cat /dir1/output2/part-r-00000
+  697  clear
+  698  cd ..
+  699  ls
+  700  sudo mkdir algor
+  701  ls
+  702  cd algor/
+  703  ls
+  704  sudo gedit average_algor
+  705  cd ..
+  706  ls
+  707  sudo mkdir unprocessed
+  708  ls
+  709  cd unprocessed/
+  710  wget 'https://svn.apache.org/repos/asf/hadoop/common/trunk/hadoop-mapreduce-project/hadoop-mapreduce-examples/src/main/java/org/apache/hadoop/examples/WordStandardDeviation.java'
+  711  sudo wget 'https://svn.apache.org/repos/asf/hadoop/common/trunk/hadoop-mapreduce-project/hadoop-mapreduce-examples/src/main/java/org/apache/hadoop/examples/WordStandardDeviation.java'
+  712  cd /etc/apt/
+  713  sudo gedit apt.conf
+  714  cd 
+  715  cd unprocessed/
+  716  ls
+  717  sudo wget 'https://svn.apache.org/repos/asf/hadoop/common/trunk/hadoop-mapreduce-project/hadoop-mapreduce-examples/src/main/java/org/apache/hadoop/examples/WordStandardDeviation.java'
+  718  sudo wget https://svn.apache.org/repos/asf/hadoop/common/trunk/hadoop-mapreduce-project/hadoop-mapreduce-examples/src/main/java/org/apache/hadoop/examples/WordStandardDeviation.java
+  719  sudo gedit /etc/apt/apt.conf
+  720  ls
+  721  sudo gedit WordStandardDeviation.java
+  722  clear
+  723  cd 
+  724  stop-all.sh
+  725  jps
+  726  exit

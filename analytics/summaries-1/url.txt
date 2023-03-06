@@ -1,0 +1,1 @@
+https://codereview.stackexchange.com/questions/42885/calculate-min-max-average-and-variance-on-a-large-dataset

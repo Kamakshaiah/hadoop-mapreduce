@@ -1,0 +1,3 @@
+https://github.com/jasebell/SalesDataHadoop
+https://dataissexy.wordpress.com/2013/10/20/crafting-a-realworld-hadoop-example-for-sales-data-part-1/
+https://timepasstechies.com/mapreduce-numerical-summarizations-pattern-minimummaximumcount/
