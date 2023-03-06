@@ -1,0 +1,9 @@
+003 Amit Delhi India 12000
+004 Anil Delhi India 15000
+005 Deepak Delhi India 34000
+006 Fahed Agra India 45000
+007 Ravi Patna India 98777
+008 Avinash Punjab India 120000
+009 Saajan Punjab India 54000
+001 Harit Delhi India 20000
+002 Hardy Agra India 20000

@@ -1,0 +1,5 @@
+# https://haritbigdata.wordpress.com/2015/07/07/hadoop-employee-program-with-mapreduce-pig-and-hive/
+hadoop fs -copyFromLocal employee /empdata1
+hadoop jar testemployee.jar empmain /empdata1 /maxsalempout
+hadoop fs -ls /maxsalempout
+hadoop fs -cat /maxsalempout/part-r-00000
